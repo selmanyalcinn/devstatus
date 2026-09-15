@@ -1,0 +1,268 @@
+products:
+- id: rosdep
+  name: rosdep
+  category:
+  - Robotics
+  - ROS Tooling
+  tags:
+  - robotics
+  - ros
+  - dependencies
+  packages:
+  - python3-rosdep*
+  binaries:
+  - rosdep
+  version_commands:
+  - - rosdep
+    - --version
+- id: rqt
+  name: rqt
+  category:
+  - Robotics
+  - Visualization
+  tags:
+  - robotics
+  - ros
+  packages:
+  - ros-*-rqt*
+  binaries:
+  - rqt
+- id: micro-ros
+  name: micro-ROS
+  category:
+  - Robotics
+  - Embedded ROS
+  tags:
+  - robotics
+  - ros
+  - embedded
+  packages:
+  - ros-*-micro-ros*
+  keywords:
+  - micro-ros
+- id: mavros
+  name: MAVROS
+  category:
+  - Robotics
+  - Drones
+  tags:
+  - robotics
+  - ros
+  - drone
+  packages:
+  - ros-*-mavros*
+  artifact_names:
+  - mavros
+- id: px4
+  name: PX4
+  category:
+  - Robotics
+  - Drones
+  tags:
+  - robotics
+  - drone
+  - autopilot
+  binaries:
+  - px4
+  paths:
+  - '*/PX4-Autopilot*'
+- id: ardupilot
+  name: ArduPilot
+  category:
+  - Robotics
+  - Drones
+  tags:
+  - robotics
+  - drone
+  - autopilot
+  binaries:
+  - sim_vehicle.py
+  paths:
+  - '*/ardupilot*'
+- id: realsense
+  name: Intel RealSense
+  category:
+  - Robotics
+  - Perception & Sensors
+  tags:
+  - robotics
+  - camera
+  - depth
+  packages:
+  - librealsense*
+  - ros-*-realsense*
+  binaries:
+  - realsense-viewer
+- id: open3d
+  name: Open3D
+  category:
+  - Robotics
+  - 3D Perception
+  tags:
+  - robotics
+  - 3d
+  - point-cloud
+  python_packages:
+  - open3d
+- id: pcl
+  name: Point Cloud Library
+  category:
+  - Robotics
+  - 3D Perception
+  tags:
+  - robotics
+  - point-cloud
+  packages:
+  - libpcl*
+  binaries:
+  - pcl_viewer
+- id: octomap
+  name: OctoMap
+  category:
+  - Robotics
+  - Mapping
+  tags:
+  - robotics
+  - mapping
+  packages:
+  - liboctomap*
+  - ros-*-octomap*
+- id: cartographer
+  name: Cartographer
+  category:
+  - Robotics
+  - SLAM
+  tags:
+  - robotics
+  - slam
+  packages:
+  - ros-*-cartographer*
+- id: isaac-ros
+  name: NVIDIA Isaac ROS
+  category:
+  - Robotics
+  - Perception & Acceleration
+  tags:
+  - robotics
+  - nvidia
+  - ros
+  packages:
+  - ros-*-isaac-ros*
+  keywords:
+  - isaac ros
+- id: esptool
+  name: esptool
+  category:
+  - Embedded & IoT
+  - Espressif
+  tags:
+  - embedded
+  - esp32
+  python_packages:
+  - esptool
+  binaries:
+  - esptool.py
+  - esptool
+- id: avrdude
+  name: AVRDUDE
+  category:
+  - Embedded & IoT
+  - AVR
+  tags:
+  - embedded
+  - arduino
+  packages:
+  - avrdude
+  binaries:
+  - avrdude
+  version_commands:
+  - - avrdude
+    - -?
+- id: west
+  name: West
+  category:
+  - Embedded & IoT
+  - Zephyr
+  tags:
+  - embedded
+  - zephyr
+  python_packages:
+  - west
+  binaries:
+  - west
+  version_commands:
+  - - west
+    - --version
+- id: nrfutil
+  name: nRF Util
+  category:
+  - Embedded & IoT
+  - Nordic
+  tags:
+  - embedded
+  - nrf
+  binaries:
+  - nrfutil
+  version_commands:
+  - - nrfutil
+    - --version
+- id: minicom
+  name: Minicom
+  category:
+  - Embedded & IoT
+  - Serial
+  tags:
+  - embedded
+  - serial
+  packages:
+  - minicom
+  binaries:
+  - minicom
+  version_commands:
+  - - minicom
+    - --version
+- id: picocom
+  name: Picocom
+  category:
+  - Embedded & IoT
+  - Serial
+  tags:
+  - embedded
+  - serial
+  packages:
+  - picocom
+  binaries:
+  - picocom
+  version_commands:
+  - - picocom
+    - --help
+- id: riscv-toolchain
+  name: RISC-V GCC Toolchain
+  category:
+  - Embedded & IoT
+  - Toolchains
+  tags:
+  - embedded
+  - riscv
+  binaries:
+  - riscv64-unknown-elf-gcc
+  version_commands:
+  - - riscv64-unknown-elf-gcc
+    - --version
+- id: containerd
+  name: containerd
+  category:
+  - Containers
+  - Runtime
+  tags:
+  - containers
+  - runtime
+  packages:
+  - containerd*
+  binaries:
+  - containerd
+  services:
+  - containerd.service
+  version_commands:
+  - - containerd
+    - --version
