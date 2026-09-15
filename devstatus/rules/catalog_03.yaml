@@ -1,0 +1,578 @@
+products:
+- id: platformio
+  name: PlatformIO
+  category:
+  - Embedded & IoT
+  tags:
+  - embedded
+  - iot
+  - firmware
+  binaries:
+  - pio
+  - platformio
+  version_commands:
+  - - pio
+    - --version
+- id: arduino-cli
+  name: Arduino CLI
+  category:
+  - Embedded & IoT
+  tags:
+  - embedded
+  - arduino
+  - firmware
+  binaries:
+  - arduino-cli
+  version_commands:
+  - - arduino-cli
+    - version
+- id: esp-idf
+  name: ESP-IDF
+  category:
+  - Embedded & IoT
+  tags:
+  - embedded
+  - esp32
+  - firmware
+  binaries:
+  - idf.py
+  version_commands:
+  - - idf.py
+    - --version
+- id: openocd
+  name: OpenOCD
+  category:
+  - Embedded & IoT
+  - Debugging
+  tags:
+  - embedded
+  - debugging
+  - jtag
+  packages:
+  - openocd
+  binaries:
+  - openocd
+  version_commands:
+  - - openocd
+    - --version
+- id: qemu
+  name: QEMU
+  category:
+  - Systems & OS Development
+  - Virtualization
+  tags:
+  - systems
+  - virtualization
+  - emulator
+  packages:
+  - qemu-*
+  binaries:
+  - qemu-system-x86_64
+  version_commands:
+  - - qemu-system-x86_64
+    - --version
+- id: bpftool
+  name: bpftool
+  category:
+  - Systems & OS Development
+  - eBPF
+  tags:
+  - ebpf
+  - kernel
+  - systems
+  packages:
+  - linux-tools-*
+  - bpftool
+  binaries:
+  - bpftool
+  version_commands:
+  - - bpftool
+    - version
+- id: wireshark
+  name: Wireshark
+  category:
+  - Networking
+  - Packet Analysis
+  tags:
+  - networking
+  - security
+  - packets
+  packages:
+  - wireshark*
+  binaries:
+  - wireshark
+  - tshark
+  version_commands:
+  - - tshark
+    - --version
+- id: tcpdump
+  name: tcpdump
+  category:
+  - Networking
+  - Packet Analysis
+  tags:
+  - networking
+  - security
+  - packets
+  packages:
+  - tcpdump
+  binaries:
+  - tcpdump
+  version_commands:
+  - - tcpdump
+    - --version
+- id: nmap
+  name: Nmap
+  category:
+  - Security
+  - Network Security
+  tags:
+  - security
+  - networking
+  - scanner
+  packages:
+  - nmap
+  binaries:
+  - nmap
+  version_commands:
+  - - nmap
+    - --version
+- id: shellcheck
+  name: ShellCheck
+  category:
+  - Security & Quality
+  - Static Analysis
+  tags:
+  - shell
+  - linting
+  - static-analysis
+  packages:
+  - shellcheck
+  binaries:
+  - shellcheck
+  version_commands:
+  - - shellcheck
+    - --version
+- id: trivy
+  name: Trivy
+  category:
+  - Security
+  - Vulnerability Scanning
+  tags:
+  - security
+  - containers
+  - scanner
+  binaries:
+  - trivy
+  version_commands:
+  - - trivy
+    - --version
+- id: semgrep
+  name: Semgrep
+  category:
+  - Security
+  - Static Analysis
+  tags:
+  - security
+  - sast
+  - static-analysis
+  binaries:
+  - semgrep
+  version_commands:
+  - - semgrep
+    - --version
+- id: gitleaks
+  name: Gitleaks
+  category:
+  - Security
+  - Secrets Scanning
+  tags:
+  - security
+  - git
+  - secrets
+  binaries:
+  - gitleaks
+  version_commands:
+  - - gitleaks
+    - version
+- id: pytest
+  name: pytest
+  category:
+  - Testing & QA
+  - Unit Testing
+  tags:
+  - python
+  - testing
+  binaries:
+  - pytest
+  version_commands:
+  - - pytest
+    - --version
+- id: playwright
+  name: Playwright
+  category:
+  - Testing & QA
+  - End-to-End
+  tags:
+  - testing
+  - browser
+  binaries:
+  - playwright
+  version_commands:
+  - - playwright
+    - --version
+- id: k6
+  name: k6
+  category:
+  - Testing & QA
+  - Load Testing
+  tags:
+  - testing
+  - load-testing
+  binaries:
+  - k6
+  version_commands:
+  - - k6
+    - version
+- id: ffmpeg
+  name: FFmpeg
+  category:
+  - Media & Graphics
+  tags:
+  - media
+  - video
+  - audio
+  packages:
+  - ffmpeg
+  binaries:
+  - ffmpeg
+  version_commands:
+  - - ffmpeg
+    - -version
+- id: graphviz
+  name: Graphviz
+  category:
+  - Developer Utilities
+  - Visualization
+  tags:
+  - graph
+  - visualization
+  packages:
+  - graphviz
+  binaries:
+  - dot
+  version_commands:
+  - - dot
+    - -V
+- id: ripgrep
+  name: ripgrep
+  category:
+  - Developer Utilities
+  - Search
+  tags:
+  - cli
+  - search
+  packages:
+  - ripgrep
+  binaries:
+  - rg
+  version_commands:
+  - - rg
+    - --version
+- id: fd
+  name: fd
+  category:
+  - Developer Utilities
+  - Search
+  tags:
+  - cli
+  - search
+  - files
+  packages:
+  - fd-find
+  binaries:
+  - fd
+  - fdfind
+  version_commands:
+  - - fd
+    - --version
+  - - fdfind
+    - --version
+- id: bat
+  name: bat
+  category:
+  - Developer Utilities
+  - File Tools
+  tags:
+  - cli
+  - files
+  packages:
+  - bat
+  binaries:
+  - bat
+  - batcat
+  version_commands:
+  - - bat
+    - --version
+  - - batcat
+    - --version
+- id: jq
+  name: jq
+  category:
+  - Developer Utilities
+  - Data Formats
+  tags:
+  - cli
+  - json
+  packages:
+  - jq
+  binaries:
+  - jq
+  version_commands:
+  - - jq
+    - --version
+- id: httpie
+  name: HTTPie
+  category:
+  - Developer Utilities
+  - HTTP Clients
+  tags:
+  - cli
+  - http
+  - api
+  packages:
+  - httpie
+  binaries:
+  - http
+  version_commands:
+  - - http
+    - --version
+- id: curl
+  name: curl
+  category:
+  - Developer Utilities
+  - HTTP Clients
+  tags:
+  - cli
+  - http
+  - networking
+  packages:
+  - curl
+  binaries:
+  - curl
+  version_commands:
+  - - curl
+    - --version
+- id: btop
+  name: btop
+  category:
+  - Developer Utilities
+  - Monitoring
+  tags:
+  - cli
+  - monitoring
+  packages:
+  - btop
+  binaries:
+  - btop
+  version_commands:
+  - - btop
+    - --version
+- id: fzf
+  name: fzf
+  category:
+  - Developer Utilities
+  - Terminal
+  tags:
+  - cli
+  - terminal
+  - search
+  packages:
+  - fzf
+  binaries:
+  - fzf
+  version_commands:
+  - - fzf
+    - --version
+- id: direnv
+  name: direnv
+  category:
+  - Developer Utilities
+  - Environments
+  tags:
+  - cli
+  - environment
+  packages:
+  - direnv
+  binaries:
+  - direnv
+  version_commands:
+  - - direnv
+    - version
+- id: fastapi
+  name: FastAPI
+  category:
+  - Backend
+  - Web Frameworks
+  tags:
+  - backend
+  - python
+  - api
+  artifact_names:
+  - fastapi
+  keywords:
+  - fastapi
+- id: django
+  name: Django
+  category:
+  - Backend
+  - Web Frameworks
+  tags:
+  - backend
+  - python
+  - web
+  artifact_names:
+  - Django
+  - django
+  keywords:
+  - django web framework
+- id: flask
+  name: Flask
+  category:
+  - Backend
+  - Web Frameworks
+  tags:
+  - backend
+  - python
+  - web
+  artifact_names:
+  - Flask
+  - flask
+- id: uvicorn
+  name: Uvicorn
+  category:
+  - Backend
+  - Application Servers
+  tags:
+  - backend
+  - python
+  - asgi
+  artifact_names:
+  - uvicorn
+  binaries:
+  - uvicorn
+- id: gunicorn
+  name: Gunicorn
+  category:
+  - Backend
+  - Application Servers
+  tags:
+  - backend
+  - python
+  - wsgi
+  artifact_names:
+  - gunicorn
+  binaries:
+  - gunicorn
+- id: express
+  name: Express
+  category:
+  - Backend
+  - Web Frameworks
+  tags:
+  - backend
+  - javascript
+  - node
+  artifact_names:
+  - express
+- id: nestjs
+  name: NestJS
+  category:
+  - Backend
+  - Web Frameworks
+  tags:
+  - backend
+  - typescript
+  - node
+  artifact_names:
+  - '@nestjs/core'
+  - '@nestjs/cli'
+  binaries:
+  - nest
+- id: spring-boot
+  name: Spring Boot
+  category:
+  - Backend
+  - Web Frameworks
+  tags:
+  - backend
+  - java
+  - jvm
+  artifact_names:
+  - spring-boot*
+  keywords:
+  - spring boot
+- id: graphql
+  name: GraphQL Tooling
+  category:
+  - Backend
+  - API & RPC
+  tags:
+  - backend
+  - graphql
+  - api
+  artifact_names:
+  - graphql
+  - graphql-core
+  - '@apollo/server'
+  keywords:
+  - graphql
+- id: react
+  name: React
+  category:
+  - Frontend
+  - Frameworks & Libraries
+  tags:
+  - frontend
+  - javascript
+  - react
+  artifact_names:
+  - react
+  - react-dom
+- id: nextjs
+  name: Next.js
+  category:
+  - Frontend
+  - Meta Frameworks
+  tags:
+  - frontend
+  - javascript
+  - react
+  artifact_names:
+  - next
+- id: vue
+  name: Vue
+  category:
+  - Frontend
+  - Frameworks & Libraries
+  tags:
+  - frontend
+  - javascript
+  - vue
+  artifact_names:
+  - vue
+  - '@vue/cli'
+- id: angular
+  name: Angular
+  category:
+  - Frontend
+  - Frameworks & Libraries
+  tags:
+  - frontend
+  - typescript
+  - angular
+  artifact_names:
+  - '@angular/core'
+  - '@angular/cli'
+  binaries:
+  - ng
