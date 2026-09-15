@@ -1,0 +1,272 @@
+products:
+- id: laravel
+  name: Laravel
+  category:
+  - Backend
+  - Web Frameworks
+  tags:
+  - backend
+  - php
+  binaries:
+  - artisan
+  keywords:
+  - laravel framework
+- id: fiber-go
+  name: Fiber
+  category:
+  - Backend
+  - Web Frameworks
+  tags:
+  - backend
+  - go
+  go_modules:
+  - github.com/gofiber/fiber*
+- id: gin-go
+  name: Gin
+  category:
+  - Backend
+  - Web Frameworks
+  tags:
+  - backend
+  - go
+  go_modules:
+  - github.com/gin-gonic/gin*
+- id: grpc
+  name: gRPC
+  category:
+  - Backend
+  - API & RPC
+  tags:
+  - grpc
+  - rpc
+  - api
+  packages:
+  - libgrpc*
+  - grpc-*
+  python_packages:
+  - grpcio
+  npm:
+  - '@grpc/*'
+- id: openapi-generator
+  name: OpenAPI Generator
+  category:
+  - Backend
+  - API & RPC
+  tags:
+  - openapi
+  - api
+  binaries:
+  - openapi-generator
+  version_commands:
+  - - openapi-generator
+    - version
+- id: swagger-cli
+  name: Swagger CLI
+  category:
+  - Backend
+  - API & RPC
+  tags:
+  - openapi
+  - api
+  npm:
+  - swagger-cli
+  - '@redocly/cli'
+  artifact_names:
+  - swagger-cli
+- id: haproxy
+  name: HAProxy
+  category:
+  - Backend
+  - Web Servers & Proxies
+  tags:
+  - proxy
+  - load-balancer
+  packages:
+  - haproxy
+  binaries:
+  - haproxy
+  services:
+  - haproxy.service
+  version_commands:
+  - - haproxy
+    - -v
+- id: traefik
+  name: Traefik
+  category:
+  - Backend
+  - Web Servers & Proxies
+  tags:
+  - proxy
+  - ingress
+  binaries:
+  - traefik
+  version_commands:
+  - - traefik
+    - version
+- id: eslint
+  name: ESLint
+  category:
+  - Frontend
+  - Code Quality
+  tags:
+  - javascript
+  - lint
+  npm:
+  - eslint
+  binaries:
+  - eslint
+  version_commands:
+  - - eslint
+    - --version
+- id: prettier
+  name: Prettier
+  category:
+  - Frontend
+  - Code Quality
+  tags:
+  - javascript
+  - formatter
+  npm:
+  - prettier
+  binaries:
+  - prettier
+  version_commands:
+  - - prettier
+    - --version
+- id: tailwindcss
+  name: Tailwind CSS
+  category:
+  - Frontend
+  - Styling
+  tags:
+  - css
+  - frontend
+  npm:
+  - tailwindcss
+  binaries:
+  - tailwindcss
+- id: storybook
+  name: Storybook
+  category:
+  - Frontend
+  - Component Tooling
+  tags:
+  - frontend
+  - ui
+  npm:
+  - storybook
+  - '@storybook/*'
+- id: electron
+  name: Electron
+  category:
+  - Desktop Development
+  tags:
+  - javascript
+  - desktop
+  npm:
+  - electron
+  binaries:
+  - electron
+- id: tauri
+  name: Tauri
+  category:
+  - Desktop Development
+  tags:
+  - rust
+  - desktop
+  cargo:
+  - tauri-cli
+  npm:
+  - '@tauri-apps/cli'
+  binaries:
+  - cargo-tauri
+- id: mariadb
+  name: MariaDB
+  category:
+  - Databases
+  - Relational
+  tags:
+  - database
+  - sql
+  packages:
+  - mariadb-*
+  binaries:
+  - mariadb
+  - mariadbd
+  services:
+  - mariadb.service
+  version_commands:
+  - - mariadb
+    - --version
+- id: cockroachdb
+  name: CockroachDB
+  category:
+  - Databases
+  - Distributed SQL
+  tags:
+  - database
+  - sql
+  - distributed
+  binaries:
+  - cockroach
+  version_commands:
+  - - cockroach
+    - version
+- id: clickhouse
+  name: ClickHouse
+  category:
+  - Databases
+  - OLAP
+  tags:
+  - database
+  - analytics
+  packages:
+  - clickhouse-*
+  binaries:
+  - clickhouse
+  services:
+  - clickhouse-server.service
+  version_commands:
+  - - clickhouse
+    - --version
+- id: duckdb
+  name: DuckDB
+  category:
+  - Databases
+  - Analytical
+  tags:
+  - database
+  - analytics
+  python_packages:
+  - duckdb
+  binaries:
+  - duckdb
+  version_commands:
+  - - duckdb
+    - --version
+- id: cassandra
+  name: Apache Cassandra
+  category:
+  - Databases
+  - Wide Column
+  tags:
+  - database
+  - nosql
+  packages:
+  - cassandra
+  binaries:
+  - cassandra
+  services:
+  - cassandra.service
+- id: couchdb
+  name: Apache CouchDB
+  category:
+  - Databases
+  - Document
+  tags:
+  - database
+  - nosql
+  packages:
+  - couchdb
+  services:
+  - couchdb.service
