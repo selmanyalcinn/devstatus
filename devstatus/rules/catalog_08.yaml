@@ -1,0 +1,232 @@
+products:
+- id: openvino
+  name: OpenVINO
+  category:
+  - AI & ML
+  - Inference
+  tags:
+  - ai
+  - inference
+  - intel
+  python_packages:
+  - openvino
+  binaries:
+  - benchmark_app
+- id: triton-server
+  name: NVIDIA Triton Inference Server
+  category:
+  - AI & ML
+  - Inference
+  tags:
+  - ai
+  - inference
+  - nvidia
+  binaries:
+  - tritonserver
+  version_commands:
+  - - tritonserver
+    - --version
+- id: ray
+  name: Ray
+  category:
+  - AI & ML
+  - Distributed Compute
+  tags:
+  - ai
+  - distributed
+  python_packages:
+  - ray
+- id: langchain
+  name: LangChain
+  category:
+  - AI & ML
+  - LLM & Agent Tooling
+  tags:
+  - ai
+  - llm
+  - agents
+  python_packages:
+  - langchain
+  - langchain-core
+- id: llama-index
+  name: LlamaIndex
+  category:
+  - AI & ML
+  - LLM & Agent Tooling
+  tags:
+  - ai
+  - llm
+  - rag
+  python_packages:
+  - llama-index
+  - llama_index
+- id: sentence-transformers
+  name: Sentence Transformers
+  category:
+  - AI & ML
+  - Embeddings
+  tags:
+  - ai
+  - embeddings
+  python_packages:
+  - sentence-transformers
+- id: gradio
+  name: Gradio
+  category:
+  - AI & ML
+  - App Tooling
+  tags:
+  - ai
+  - ui
+  python_packages:
+  - gradio
+- id: streamlit
+  name: Streamlit
+  category:
+  - AI & ML
+  - App Tooling
+  tags:
+  - ai
+  - data
+  - ui
+  python_packages:
+  - streamlit
+  binaries:
+  - streamlit
+- id: datasets
+  name: Hugging Face Datasets
+  category:
+  - AI & ML
+  - Data
+  tags:
+  - ai
+  - huggingface
+  python_packages:
+  - datasets
+- id: accelerate
+  name: Hugging Face Accelerate
+  category:
+  - AI & ML
+  - Training
+  tags:
+  - ai
+  - huggingface
+  python_packages:
+  - accelerate
+- id: diffusers
+  name: Diffusers
+  category:
+  - AI & ML
+  - Generative AI
+  tags:
+  - ai
+  - diffusion
+  python_packages:
+  - diffusers
+- id: peft
+  name: PEFT
+  category:
+  - AI & ML
+  - Training
+  tags:
+  - ai
+  - finetuning
+  python_packages:
+  - peft
+- id: bitsandbytes
+  name: bitsandbytes
+  category:
+  - AI & ML
+  - GPU & Quantization
+  tags:
+  - ai
+  - gpu
+  - quantization
+  python_packages:
+  - bitsandbytes
+- id: cupy
+  name: CuPy
+  category:
+  - GPU Compute
+  - Python
+  tags:
+  - gpu
+  - cuda
+  - python
+  python_packages:
+  - cupy
+  - cupy-cuda*
+- id: numba
+  name: Numba
+  category:
+  - AI & ML
+  - Scientific Python
+  tags:
+  - python
+  - jit
+  python_packages:
+  - numba
+- id: polars
+  name: Polars
+  category:
+  - Data Engineering
+  - DataFrames
+  tags:
+  - data
+  - python
+  python_packages:
+  - polars
+- id: dask
+  name: Dask
+  category:
+  - Data Engineering
+  - Distributed Compute
+  tags:
+  - data
+  - python
+  - distributed
+  python_packages:
+  - dask
+  - distributed
+- id: prefect
+  name: Prefect
+  category:
+  - Data Engineering
+  - Orchestration
+  tags:
+  - data
+  - orchestration
+  python_packages:
+  - prefect
+  binaries:
+  - prefect
+- id: dagster
+  name: Dagster
+  category:
+  - Data Engineering
+  - Orchestration
+  tags:
+  - data
+  - orchestration
+  python_packages:
+  - dagster
+  binaries:
+  - dagster
+- id: colcon
+  name: colcon
+  category:
+  - Robotics
+  - ROS Tooling
+  tags:
+  - robotics
+  - ros
+  - build
+  packages:
+  - python3-colcon-*
+  python_packages:
+  - colcon-*
+  binaries:
+  - colcon
+  version_commands:
+  - - colcon
+    - version-check
