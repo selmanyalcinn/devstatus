@@ -22,7 +22,22 @@ def _load_custom_products() -> list[dict]:
             continue
     return out
 
-BUILTIN_CATALOG = _load_yaml_resource("catalog.yaml").get("products", [])
+def _load_builtin_catalog() -> list[dict]:
+    root = files("devstatus.rules")
+    out=[]
+    try:
+        entries=sorted((p for p in root.iterdir() if p.name.startswith("catalog_") and p.name.endswith((".yaml", ".yml"))), key=lambda p:p.name)
+    except Exception:
+        entries=[]
+    for p in entries:
+        try:
+            data=yaml.safe_load(p.read_text()) or {}
+            if isinstance(data,dict): out.extend(data.get("products",[]))
+        except Exception:
+            continue
+    return out
+
+BUILTIN_CATALOG = _load_builtin_catalog()
 GENERIC = _load_yaml_resource("generic.yaml").get("categories", [])
 
 
