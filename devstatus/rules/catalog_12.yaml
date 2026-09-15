@@ -1,0 +1,134 @@
+products:
+- id: openssl
+  name: OpenSSL
+  category: [Security, Cryptography]
+  tags: [security, tls]
+  binaries: [openssl]
+  version_commands: [[openssl, version]]
+- id: websocat
+  name: websocat
+  category: [Networking, WebSocket]
+  tags: [networking, websocket]
+  binaries: [websocat]
+  version_commands: [[websocat, --version]]
+- id: newman
+  name: Newman
+  category: [Testing & QA, API Testing]
+  tags: [testing, api]
+  npm: [newman]
+  binaries: [newman]
+  version_commands: [[newman, --version]]
+- id: bruno-cli
+  name: Bruno CLI
+  category: [Testing & QA, API Testing]
+  tags: [testing, api]
+  npm: ['@usebruno/cli']
+  binaries: [bru]
+  version_commands: [[bru, --version]]
+- id: ruff
+  name: Ruff
+  category: [Testing & QA, Linting]
+  tags: [python, lint]
+  python_packages: [ruff]
+  binaries: [ruff]
+  version_commands: [[ruff, --version]]
+- id: mypy
+  name: mypy
+  category: [Testing & QA, Type Checking]
+  tags: [python, types]
+  python_packages: [mypy]
+  binaries: [mypy]
+  version_commands: [[mypy, --version]]
+- id: black
+  name: Black
+  category: [Testing & QA, Formatting]
+  tags: [python, formatter]
+  python_packages: [black]
+  binaries: [black]
+  version_commands: [[black, --version]]
+- id: tox
+  name: tox
+  category: [Testing & QA, Test Environments]
+  tags: [python, testing]
+  python_packages: [tox]
+  binaries: [tox]
+  version_commands: [[tox, --version]]
+- id: locust
+  name: Locust
+  category: [Testing & QA, Load Testing]
+  tags: [testing, load]
+  python_packages: [locust]
+  binaries: [locust]
+  version_commands: [[locust, --version]]
+- id: selenium
+  name: Selenium
+  category: [Testing & QA, End-to-End]
+  tags: [testing, browser]
+  python_packages: [selenium]
+  npm: [selenium-webdriver]
+- id: lldb
+  name: LLDB
+  category: [Systems & OS Development, Debugging]
+  tags: [debugger, llvm]
+  packages: [lldb*]
+  binaries: [lldb]
+  version_commands: [[lldb, --version]]
+- id: perf
+  name: perf
+  category: [Systems & OS Development, Profiling]
+  tags: [linux, profiling]
+  binaries: [perf]
+  version_commands: [[perf, --version]]
+- id: ltrace
+  name: ltrace
+  category: [Systems & OS Development, Debugging]
+  tags: [linux, debugging]
+  packages: [ltrace]
+  binaries: [ltrace]
+  version_commands: [[ltrace, --version]]
+- id: rr
+  name: rr
+  category: [Systems & OS Development, Debugging]
+  tags: [debugging]
+  packages: [rr]
+  binaries: [rr]
+  version_commands: [[rr, --version]]
+- id: binutils
+  name: GNU Binutils
+  category: [Systems & OS Development, Binary Tooling]
+  tags: [binary, toolchain]
+  packages: [binutils]
+  binaries: [objdump]
+  version_commands: [[objdump, --version]]
+- id: blender
+  name: Blender
+  category: [Graphics & Game Development, 3D Content]
+  tags: [3d, graphics]
+  packages: [blender]
+  snaps: [blender]
+  binaries: [blender]
+  version_commands: [[blender, --version]]
+- id: unityhub
+  name: Unity Hub
+  category: [Graphics & Game Development, Engines]
+  tags: [game, unity]
+  packages: [unityhub]
+  binaries: [unityhub]
+- id: unreal
+  name: Unreal Engine
+  category: [Graphics & Game Development, Engines]
+  tags: [game, unreal]
+  binaries: [UnrealEditor]
+  paths: ['*/UnrealEngine*']
+- id: imagemagick
+  name: ImageMagick
+  category: [Media & Graphics, Image Tooling]
+  tags: [image, media]
+  packages: [imagemagick]
+  binaries: [magick, convert]
+  version_commands: [[magick, --version]]
+- id: nvm
+  name: NVM
+  category: [Languages & Toolchains, JavaScript & TypeScript]
+  tags: [javascript, node, version-manager]
+  artifact_names: [nvm]
