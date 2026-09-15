@@ -1,0 +1,131 @@
+products:
+- id: loki
+  name: Grafana Loki
+  category: [Observability, Logs]
+  tags: [observability, logs]
+  binaries: [loki]
+  version_commands: [[loki, --version]]
+- id: promtail
+  name: Promtail
+  category: [Observability, Logs]
+  tags: [observability, logs]
+  binaries: [promtail]
+  version_commands: [[promtail, --version]]
+- id: jaeger
+  name: Jaeger
+  category: [Observability, Tracing]
+  tags: [observability, tracing]
+  binaries: [jaeger-all-in-one, jaeger-query]
+- id: tempo
+  name: Grafana Tempo
+  category: [Observability, Tracing]
+  tags: [observability, tracing]
+  binaries: [tempo]
+  version_commands: [[tempo, --version]]
+- id: fluent-bit
+  name: Fluent Bit
+  category: [Observability, Logs]
+  tags: [observability, logs]
+  packages: [fluent-bit]
+  binaries: [fluent-bit]
+  version_commands: [[fluent-bit, --version]]
+- id: telegraf
+  name: Telegraf
+  category: [Observability, Metrics]
+  tags: [observability, metrics]
+  packages: [telegraf]
+  binaries: [telegraf]
+  services: [telegraf.service]
+  version_commands: [[telegraf, --version]]
+- id: bandit
+  name: Bandit
+  category: [Security, Static Analysis]
+  tags: [security, python]
+  python_packages: [bandit]
+  binaries: [bandit]
+  version_commands: [[bandit, --version]]
+- id: snyk
+  name: Snyk
+  category: [Security, Dependency Scanning]
+  tags: [security]
+  npm: [snyk]
+  binaries: [snyk]
+  version_commands: [[snyk, --version]]
+- id: grype
+  name: Grype
+  category: [Security, Vulnerability Scanning]
+  tags: [security, containers]
+  binaries: [grype]
+  version_commands: [[grype, version]]
+- id: syft
+  name: Syft
+  category: [Security, SBOM]
+  tags: [security, sbom]
+  binaries: [syft]
+  version_commands: [[syft, version]]
+- id: cosign
+  name: Cosign
+  category: [Security, Supply Chain]
+  tags: [security, supply-chain]
+  binaries: [cosign]
+  version_commands: [[cosign, version]]
+- id: falco
+  name: Falco
+  category: [Security, Runtime Security]
+  tags: [security, containers]
+  packages: [falco]
+  binaries: [falco]
+  services: [falco.service]
+  version_commands: [[falco, --version]]
+- id: zap
+  name: OWASP ZAP
+  category: [Security, Web Security Testing]
+  tags: [security, web]
+  binaries: [zaproxy, zap.sh]
+- id: sqlmap
+  name: sqlmap
+  category: [Security, Web Security Testing]
+  tags: [security, web]
+  packages: [sqlmap]
+  binaries: [sqlmap]
+  version_commands: [[sqlmap, --version]]
+- id: ffuf
+  name: ffuf
+  category: [Security, Web Security Testing]
+  tags: [security, web]
+  binaries: [ffuf]
+  version_commands: [[ffuf, -V]]
+- id: gobuster
+  name: Gobuster
+  category: [Security, Web Security Testing]
+  tags: [security, web]
+  binaries: [gobuster]
+  version_commands: [[gobuster, version]]
+- id: hashcat
+  name: Hashcat
+  category: [Security, Password Auditing]
+  tags: [security]
+  packages: [hashcat]
+  binaries: [hashcat]
+  version_commands: [[hashcat, --version]]
+- id: john
+  name: John the Ripper
+  category: [Security, Password Auditing]
+  tags: [security]
+  packages: [john]
+  binaries: [john]
+  version_commands: [[john, --list=build-info]]
+- id: iperf3
+  name: iperf3
+  category: [Networking, Performance]
+  tags: [networking]
+  packages: [iperf3]
+  binaries: [iperf3]
+  version_commands: [[iperf3, --version]]
+- id: mtr
+  name: MTR
+  category: [Networking, Diagnostics]
+  tags: [networking]
+  packages: [mtr, mtr-tiny]
+  binaries: [mtr]
+  version_commands: [[mtr, --version]]
