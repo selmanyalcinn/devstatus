@@ -1,0 +1,125 @@
+products:
+- id: nerdctl
+  name: nerdctl
+  category: [Containers, CLI]
+  tags: [containers]
+  binaries: [nerdctl]
+  version_commands: [[nerdctl, --version]]
+- id: buildah
+  name: Buildah
+  category: [Containers, Build]
+  tags: [containers]
+  binaries: [buildah]
+  version_commands: [[buildah, --version]]
+- id: skopeo
+  name: Skopeo
+  category: [Containers, Registry Tooling]
+  tags: [containers]
+  binaries: [skopeo]
+  version_commands: [[skopeo, --version]]
+- id: k9s
+  name: K9s
+  category: [Kubernetes, Operations]
+  tags: [kubernetes]
+  binaries: [k9s]
+  version_commands: [[k9s, version]]
+- id: kustomize
+  name: Kustomize
+  category: [Kubernetes, Configuration]
+  tags: [kubernetes]
+  binaries: [kustomize]
+  version_commands: [[kustomize, version]]
+- id: skaffold
+  name: Skaffold
+  category: [Kubernetes, Development]
+  tags: [kubernetes]
+  binaries: [skaffold]
+  version_commands: [[skaffold, version]]
+- id: tilt
+  name: Tilt
+  category: [Kubernetes, Development]
+  tags: [kubernetes]
+  binaries: [tilt]
+  version_commands: [[tilt, version]]
+- id: argocd
+  name: Argo CD CLI
+  category: [Cloud & DevOps, GitOps]
+  tags: [kubernetes, gitops]
+  binaries: [argocd]
+  version_commands: [[argocd, version, --client]]
+- id: flux
+  name: Flux CLI
+  category: [Cloud & DevOps, GitOps]
+  tags: [kubernetes, gitops]
+  binaries: [flux]
+  version_commands: [[flux, --version]]
+- id: vault
+  name: HashiCorp Vault
+  category: [Cloud & DevOps, Secrets & Identity]
+  tags: [security, secrets]
+  binaries: [vault]
+  version_commands: [[vault, version]]
+- id: consul
+  name: HashiCorp Consul
+  category: [Cloud & DevOps, Service Networking]
+  tags: [devops, networking]
+  binaries: [consul]
+  version_commands: [[consul, version]]
+- id: nomad
+  name: HashiCorp Nomad
+  category: [Cloud & DevOps, Orchestration]
+  tags: [devops, orchestration]
+  binaries: [nomad]
+  version_commands: [[nomad, version]]
+- id: packer
+  name: HashiCorp Packer
+  category: [Cloud & DevOps, Image Building]
+  tags: [devops]
+  binaries: [packer]
+  version_commands: [[packer, version]]
+- id: vagrant
+  name: Vagrant
+  category: [Cloud & DevOps, Virtual Machines]
+  tags: [devops, virtualization]
+  binaries: [vagrant]
+  version_commands: [[vagrant, --version]]
+- id: eksctl
+  name: eksctl
+  category: [Cloud & DevOps, AWS]
+  tags: [aws, kubernetes]
+  binaries: [eksctl]
+  version_commands: [[eksctl, version]]
+- id: sam-cli
+  name: AWS SAM CLI
+  category: [Cloud & DevOps, AWS]
+  tags: [aws, serverless]
+  binaries: [sam]
+  version_commands: [[sam, --version]]
+- id: serverless
+  name: Serverless Framework
+  category: [Cloud & DevOps, Serverless]
+  tags: [cloud, serverless]
+  npm: [serverless]
+  binaries: [serverless]
+  version_commands: [[serverless, --version]]
+- id: firebase-cli
+  name: Firebase CLI
+  category: [Cloud & DevOps, Cloud CLIs]
+  tags: [firebase, cloud]
+  npm: [firebase-tools]
+  binaries: [firebase]
+  version_commands: [[firebase, --version]]
+- id: vercel-cli
+  name: Vercel CLI
+  category: [Cloud & DevOps, Cloud CLIs]
+  tags: [vercel, cloud]
+  npm: [vercel]
+  binaries: [vercel]
+  version_commands: [[vercel, --version]]
+- id: netlify-cli
+  name: Netlify CLI
+  category: [Cloud & DevOps, Cloud CLIs]
+  tags: [netlify, cloud]
+  npm: [netlify-cli]
+  binaries: [netlify]
+  version_commands: [[netlify, --version]]
