@@ -63,7 +63,75 @@ Classification uses, depending on the source:
 
 Unknown user-installed software is not discarded. It appears under `Other / Unclassified` and can be corrected without changing source code.
 
-## Install
+## Installation
+
+### Recommended
+
+Clone the repository and run the installer:
+
+```bash
+git clone https://github.com/selmanyalcinn/devstatus.git
+cd devstatus
+./install.sh
+```
+
+If you use GitHub SSH:
+
+```bash
+git clone git@github.com:selmanyalcinn/devstatus.git
+cd devstatus
+./install.sh
+```
+
+The installer keeps `devstatus` isolated from the system Python. It uses **uv** when available and falls back to **pipx**.
+
+You need either `uv` or `pipx` installed before running `./install.sh`.
+
+Verify the installation:
+
+```bash
+devstatus --version
+devstatus rules stats
+devstatus --help
+```
+
+Then run your first scan:
+
+```bash
+devstatus
+```
+
+The first scan creates the baseline used for future change detection.
+
+### Update
+
+Pull the latest source and rerun the installer:
+
+```bash
+cd devstatus
+git pull
+./install.sh
+```
+
+Your snapshots, settings, overrides and custom rule files are stored under your home directory, so updating the application does not remove them.
+
+### Development install
+
+If you are contributing to `devstatus` and want code changes to take effect immediately:
+
+```bash
+git clone git@github.com:selmanyalcinn/devstatus.git
+cd devstatus
+uv tool install --editable --force .
+```
+
+Run the tests with:
+
+```bash
+uv run --with pytest pytest
+```
+
+### Manual install
 
 With `uv`:
 
@@ -71,24 +139,27 @@ With `uv`:
 uv tool install .
 ```
 
-During development:
-
-```bash
-uv tool install --editable .
-```
-
-Or with pipx:
+Or with `pipx`:
 
 ```bash
 pipx install .
 ```
 
-Verify:
+### Uninstall
+
+If installed with `uv`:
 
 ```bash
-devstatus --version
-devstatus rules stats
+uv tool uninstall devstatus
 ```
+
+If installed with `pipx`:
+
+```bash
+pipx uninstall devstatus
+```
+
+Uninstalling the executable does not automatically delete your `~/.config/devstatus` or `~/.local/state/devstatus` data.
 
 ## Everyday commands
 
