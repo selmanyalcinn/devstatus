@@ -1,0 +1,240 @@
+products:
+- id: neo4j
+  name: Neo4j
+  category:
+  - Databases
+  - Graph
+  tags:
+  - database
+  - graph
+  packages:
+  - neo4j
+  binaries:
+  - neo4j
+  services:
+  - neo4j.service
+  version_commands:
+  - - neo4j
+    - --version
+- id: influxdb
+  name: InfluxDB
+  category:
+  - Databases
+  - Time Series
+  tags:
+  - database
+  - timeseries
+  packages:
+  - influxdb*
+  binaries:
+  - influx
+  - influxd
+  services:
+  - influxdb.service
+- id: milvus
+  name: Milvus
+  category:
+  - Databases
+  - Vector
+  tags:
+  - database
+  - vector
+  - ai
+  python_packages:
+  - pymilvus
+  binaries:
+  - milvus
+- id: weaviate
+  name: Weaviate
+  category:
+  - Databases
+  - Vector
+  tags:
+  - database
+  - vector
+  - ai
+  python_packages:
+  - weaviate-client
+  binaries:
+  - weaviate
+- id: chroma
+  name: Chroma
+  category:
+  - Databases
+  - Vector
+  tags:
+  - database
+  - vector
+  - ai
+  python_packages:
+  - chromadb
+- id: faiss
+  name: FAISS
+  category:
+  - AI & ML
+  - Vector Search
+  tags:
+  - ai
+  - vector
+  python_packages:
+  - faiss-cpu
+  - faiss-gpu
+  - faiss
+- id: nats
+  name: NATS
+  category:
+  - Messaging & Streaming
+  - Message Brokers
+  tags:
+  - messaging
+  - broker
+  binaries:
+  - nats
+  - nats-server
+  version_commands:
+  - - nats-server
+    - --version
+- id: pulsar
+  name: Apache Pulsar
+  category:
+  - Messaging & Streaming
+  - Event Streaming
+  tags:
+  - messaging
+  - streaming
+  binaries:
+  - pulsar
+  paths:
+  - '*/pulsar*'
+- id: redpanda
+  name: Redpanda
+  category:
+  - Messaging & Streaming
+  - Event Streaming
+  tags:
+  - messaging
+  - kafka
+  binaries:
+  - rpk
+  - redpanda
+  version_commands:
+  - - rpk
+    - version
+- id: zeromq
+  name: ZeroMQ
+  category:
+  - Messaging & Streaming
+  - Messaging Libraries
+  tags:
+  - messaging
+  packages:
+  - libzmq*
+  python_packages:
+  - pyzmq
+- id: activemq
+  name: Apache ActiveMQ
+  category:
+  - Messaging & Streaming
+  - Message Brokers
+  tags:
+  - messaging
+  - broker
+  binaries:
+  - activemq
+  paths:
+  - '*/activemq*'
+- id: keras
+  name: Keras
+  category:
+  - AI & ML
+  - Frameworks
+  tags:
+  - ai
+  - deep-learning
+  python_packages:
+  - keras
+- id: xgboost
+  name: XGBoost
+  category:
+  - AI & ML
+  - Classical ML
+  tags:
+  - ai
+  - machine-learning
+  python_packages:
+  - xgboost
+- id: lightgbm
+  name: LightGBM
+  category:
+  - AI & ML
+  - Classical ML
+  tags:
+  - ai
+  - machine-learning
+  python_packages:
+  - lightgbm
+- id: catboost
+  name: CatBoost
+  category:
+  - AI & ML
+  - Classical ML
+  tags:
+  - ai
+  - machine-learning
+  python_packages:
+  - catboost
+- id: ultralytics
+  name: Ultralytics YOLO
+  category:
+  - AI & ML
+  - Computer Vision
+  tags:
+  - ai
+  - computer-vision
+  - yolo
+  python_packages:
+  - ultralytics
+  binaries:
+  - yolo
+- id: detectron2
+  name: Detectron2
+  category:
+  - AI & ML
+  - Computer Vision
+  tags:
+  - ai
+  - computer-vision
+  python_packages:
+  - detectron2
+- id: torchvision
+  name: TorchVision
+  category:
+  - AI & ML
+  - Computer Vision
+  tags:
+  - ai
+  - pytorch
+  python_packages:
+  - torchvision
+- id: torchaudio
+  name: TorchAudio
+  category:
+  - AI & ML
+  - Audio
+  tags:
+  - ai
+  - pytorch
+  python_packages:
+  - torchaudio
+- id: onnxruntime
+  name: ONNX Runtime
+  category:
+  - AI & ML
+  - Inference
+  tags:
+  - ai
+  - inference
+  - onnx
+  python_packages:
+  - onnxruntime
+  - onnxruntime-gpu
