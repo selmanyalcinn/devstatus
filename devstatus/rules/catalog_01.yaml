@@ -1,0 +1,629 @@
+products:
+- id: git
+  name: Git
+  category:
+  - Development
+  - Source Control
+  tags:
+  - vcs
+  - git
+  packages:
+  - git
+  binaries:
+  - git
+  version_commands:
+  - - git
+    - --version
+- id: github-cli
+  name: GitHub CLI
+  category:
+  - Development
+  - Source Control
+  tags:
+  - github
+  - vcs
+  packages:
+  - gh
+  binaries:
+  - gh
+  version_commands:
+  - - gh
+    - --version
+- id: vscode
+  name: VS Code
+  category:
+  - Development
+  - Editors & IDEs
+  tags:
+  - editor
+  - ide
+  packages:
+  - code
+  snaps:
+  - code
+  binaries:
+  - code
+  version_commands:
+  - - code
+    - --version
+- id: neovim
+  name: Neovim
+  category:
+  - Development
+  - Editors & IDEs
+  tags:
+  - editor
+  packages:
+  - neovim
+  binaries:
+  - nvim
+  version_commands:
+  - - nvim
+    - --version
+- id: gcc
+  name: GCC
+  category:
+  - Languages & Toolchains
+  - C & C++
+  tags:
+  - compiler
+  - c
+  - cpp
+  packages:
+  - gcc
+  - build-essential
+  binaries:
+  - gcc
+  version_commands:
+  - - gcc
+    - --version
+- id: gpp
+  name: G++
+  category:
+  - Languages & Toolchains
+  - C & C++
+  tags:
+  - compiler
+  - cpp
+  packages:
+  - g++
+  binaries:
+  - g++
+  version_commands:
+  - - g++
+    - --version
+- id: clang
+  name: Clang
+  category:
+  - Languages & Toolchains
+  - C & C++
+  tags:
+  - compiler
+  - c
+  - cpp
+  - llvm
+  packages:
+  - clang
+  - clang-*
+  binaries:
+  - clang
+  version_commands:
+  - - clang
+    - --version
+- id: gdb
+  name: GDB
+  category:
+  - Languages & Toolchains
+  - Debugging
+  tags:
+  - debugger
+  - c
+  - cpp
+  packages:
+  - gdb
+  binaries:
+  - gdb
+  version_commands:
+  - - gdb
+    - --version
+- id: cmake
+  name: CMake
+  category:
+  - Build Systems
+  tags:
+  - build
+  - c
+  - cpp
+  packages:
+  - cmake
+  binaries:
+  - cmake
+  version_commands:
+  - - cmake
+    - --version
+- id: ninja
+  name: Ninja
+  category:
+  - Build Systems
+  tags:
+  - build
+  packages:
+  - ninja-build
+  binaries:
+  - ninja
+  version_commands:
+  - - ninja
+    - --version
+- id: make
+  name: Make
+  category:
+  - Build Systems
+  tags:
+  - build
+  packages:
+  - make
+  binaries:
+  - make
+  version_commands:
+  - - make
+    - --version
+- id: meson
+  name: Meson
+  category:
+  - Build Systems
+  tags:
+  - build
+  packages:
+  - meson
+  binaries:
+  - meson
+  version_commands:
+  - - meson
+    - --version
+- id: bazel
+  name: Bazel
+  category:
+  - Build Systems
+  tags:
+  - build
+  packages:
+  - bazel*
+  binaries:
+  - bazel
+  - bazelisk
+  version_commands:
+  - - bazel
+    - --version
+  - - bazelisk
+    - --version
+- id: python
+  name: Python
+  category:
+  - Languages & Toolchains
+  - Python
+  tags:
+  - python
+  - runtime
+  artifact_names:
+  - python
+  binaries:
+  - python3
+  version_commands:
+  - - python3
+    - --version
+- id: uv
+  name: uv
+  category:
+  - Languages & Toolchains
+  - Python
+  tags:
+  - python
+  - package-manager
+  - environment
+  artifact_names:
+  - uv
+  binaries:
+  - uv
+  version_commands:
+  - - uv
+    - --version
+- id: conda
+  name: Conda
+  category:
+  - Languages & Toolchains
+  - Python
+  tags:
+  - python
+  - environment
+  artifact_names:
+  - conda
+  binaries:
+  - conda
+  version_commands:
+  - - conda
+    - --version
+- id: pipx
+  name: pipx
+  category:
+  - Languages & Toolchains
+  - Python
+  tags:
+  - python
+  - package-manager
+  packages:
+  - pipx
+  binaries:
+  - pipx
+  version_commands:
+  - - pipx
+    - --version
+- id: node
+  name: Node.js
+  category:
+  - Languages & Toolchains
+  - JavaScript & TypeScript
+  tags:
+  - javascript
+  - runtime
+  artifact_names:
+  - node
+  binaries:
+  - node
+  version_commands:
+  - - node
+    - --version
+- id: npm
+  name: npm
+  category:
+  - Languages & Toolchains
+  - JavaScript & TypeScript
+  tags:
+  - javascript
+  - package-manager
+  packages:
+  - npm
+  binaries:
+  - npm
+  version_commands:
+  - - npm
+    - --version
+- id: pnpm
+  name: pnpm
+  category:
+  - Languages & Toolchains
+  - JavaScript & TypeScript
+  tags:
+  - javascript
+  - package-manager
+  binaries:
+  - pnpm
+  version_commands:
+  - - pnpm
+    - --version
+- id: yarn
+  name: Yarn
+  category:
+  - Languages & Toolchains
+  - JavaScript & TypeScript
+  tags:
+  - javascript
+  - package-manager
+  binaries:
+  - yarn
+  version_commands:
+  - - yarn
+    - --version
+- id: go
+  name: Go
+  category:
+  - Languages & Toolchains
+  - Go
+  tags:
+  - go
+  - compiler
+  packages:
+  - golang
+  - golang-go
+  - go
+  snaps:
+  - go
+  binaries:
+  - go
+  version_commands:
+  - - go
+    - version
+- id: rust
+  name: Rust
+  category:
+  - Languages & Toolchains
+  - Rust
+  tags:
+  - rust
+  - compiler
+  binaries:
+  - rustc
+  version_commands:
+  - - rustc
+    - --version
+- id: cargo
+  name: Cargo
+  category:
+  - Languages & Toolchains
+  - Rust
+  tags:
+  - rust
+  - package-manager
+  binaries:
+  - cargo
+  version_commands:
+  - - cargo
+    - --version
+- id: java
+  name: OpenJDK
+  category:
+  - Languages & Toolchains
+  - JVM
+  tags:
+  - java
+  - jvm
+  packages:
+  - openjdk-*-jdk
+  - openjdk-*-jre
+  binaries:
+  - java
+  version_commands:
+  - - java
+    - --version
+- id: maven
+  name: Maven
+  category:
+  - Build Systems
+  tags:
+  - java
+  - build
+  packages:
+  - maven
+  binaries:
+  - mvn
+  version_commands:
+  - - mvn
+    - --version
+- id: gradle
+  name: Gradle
+  category:
+  - Build Systems
+  tags:
+  - java
+  - kotlin
+  - build
+  packages:
+  - gradle
+  binaries:
+  - gradle
+  version_commands:
+  - - gradle
+    - --version
+- id: dotnet
+  name: .NET SDK
+  category:
+  - Languages & Toolchains
+  - .NET
+  tags:
+  - dotnet
+  - csharp
+  packages:
+  - dotnet-sdk-*
+  binaries:
+  - dotnet
+  version_commands:
+  - - dotnet
+    - --version
+- id: php
+  name: PHP
+  category:
+  - Languages & Toolchains
+  - PHP
+  tags:
+  - php
+  - runtime
+  packages:
+  - php*
+  binaries:
+  - php
+  version_commands:
+  - - php
+    - --version
+- id: ruby
+  name: Ruby
+  category:
+  - Languages & Toolchains
+  - Ruby
+  tags:
+  - ruby
+  - runtime
+  packages:
+  - ruby
+  - ruby-full
+  binaries:
+  - ruby
+  version_commands:
+  - - ruby
+    - --version
+- id: flutter
+  name: Flutter
+  category:
+  - Mobile Development
+  tags:
+  - flutter
+  - dart
+  - mobile
+  binaries:
+  - flutter
+  version_commands:
+  - - flutter
+    - --version
+- id: adb
+  name: Android Debug Bridge
+  category:
+  - Mobile Development
+  - Android
+  tags:
+  - android
+  - mobile
+  - debugging
+  packages:
+  - adb
+  binaries:
+  - adb
+  version_commands:
+  - - adb
+    - version
+- id: protobuf
+  name: Protocol Buffers
+  category:
+  - Backend
+  - API & RPC
+  tags:
+  - protobuf
+  - grpc
+  - serialization
+  packages:
+  - protobuf-compiler
+  binaries:
+  - protoc
+  version_commands:
+  - - protoc
+    - --version
+- id: grpcurl
+  name: grpcurl
+  category:
+  - Backend
+  - API & RPC
+  tags:
+  - grpc
+  - api
+  binaries:
+  - grpcurl
+  version_commands:
+  - - grpcurl
+    - --version
+- id: nginx
+  name: nginx
+  category:
+  - Backend
+  - Web Servers & Proxies
+  tags:
+  - backend
+  - web-server
+  - proxy
+  packages:
+  - nginx*
+  binaries:
+  - nginx
+  services:
+  - nginx.service
+  version_commands:
+  - - nginx
+    - -v
+- id: caddy
+  name: Caddy
+  category:
+  - Backend
+  - Web Servers & Proxies
+  tags:
+  - backend
+  - web-server
+  - proxy
+  packages:
+  - caddy
+  binaries:
+  - caddy
+  services:
+  - caddy.service
+  version_commands:
+  - - caddy
+    - version
+- id: postgresql
+  name: PostgreSQL
+  category:
+  - Databases
+  - Relational
+  tags:
+  - database
+  - sql
+  - backend
+  packages:
+  - postgresql*
+  - postgresql-client*
+  binaries:
+  - psql
+  - postgres
+  services:
+  - postgresql*.service
+  - postgresql.service
+  version_commands:
+  - - psql
+    - --version
+- id: mysql
+  name: MySQL
+  category:
+  - Databases
+  - Relational
+  tags:
+  - database
+  - sql
+  - backend
+  packages:
+  - mysql-server*
+  - mysql-client*
+  binaries:
+  - mysql
+  - mysqld
+  services:
+  - mysql.service
+  version_commands:
+  - - mysql
+    - --version
+- id: sqlite
+  name: SQLite
+  category:
+  - Databases
+  - Relational
+  tags:
+  - database
+  - sql
+  - embedded
+  packages:
+  - sqlite3
+  binaries:
+  - sqlite3
+  version_commands:
+  - - sqlite3
+    - --version
+- id: mongodb
+  name: MongoDB
+  category:
+  - Databases
+  - Document
+  tags:
+  - database
+  - nosql
+  - backend
+  packages:
+  - mongodb*
+  - mongodb-org*
+  binaries:
+  - mongod
+  - mongosh
+  - mongo
+  services:
+  - mongod.service
+  - mongodb.service
+  keywords:
+  - mongodb
+  - document database
+  version_commands:
+  - - mongod
+    - --version
+  - - mongosh
+    - --version
