@@ -1,0 +1,624 @@
+products:
+- id: redis
+  name: Redis
+  category:
+  - Databases
+  - Cache & Key-Value
+  tags:
+  - database
+  - cache
+  - key-value
+  - backend
+  packages:
+  - redis-server*
+  - redis-tools*
+  binaries:
+  - redis-server
+  - redis-cli
+  services:
+  - redis-server.service
+  - redis.service
+  keywords:
+  - redis
+  - key-value store
+  version_commands:
+  - - redis-server
+    - --version
+  - - redis-cli
+    - --version
+- id: memcached
+  name: Memcached
+  category:
+  - Databases
+  - Cache & Key-Value
+  tags:
+  - cache
+  - backend
+  packages:
+  - memcached
+  binaries:
+  - memcached
+  services:
+  - memcached.service
+  version_commands:
+  - - memcached
+    - -h
+- id: elasticsearch
+  name: Elasticsearch
+  category:
+  - Databases
+  - Search
+  tags:
+  - search
+  - database
+  - observability
+  packages:
+  - elasticsearch
+  binaries:
+  - elasticsearch
+  services:
+  - elasticsearch.service
+  keywords:
+  - elasticsearch
+  - search engine
+- id: opensearch
+  name: OpenSearch
+  category:
+  - Databases
+  - Search
+  tags:
+  - search
+  - database
+  - observability
+  packages:
+  - opensearch*
+  services:
+  - opensearch.service
+  keywords:
+  - opensearch
+- id: qdrant
+  name: Qdrant
+  category:
+  - Databases
+  - Vector
+  tags:
+  - vector-database
+  - ai
+  - rag
+  binaries:
+  - qdrant
+  services:
+  - qdrant.service
+  keywords:
+  - qdrant
+  - vector database
+- id: kafka
+  name: Apache Kafka
+  category:
+  - Messaging & Streaming
+  - Event Streaming
+  tags:
+  - kafka
+  - streaming
+  - backend
+  packages:
+  - '*kafka*'
+  binaries:
+  - kafka-server-start
+  - kafka-topics
+  services:
+  - kafka*.service
+  keywords:
+  - apache kafka
+  - event streaming
+  - kafka broker
+- id: rabbitmq
+  name: RabbitMQ
+  category:
+  - Messaging & Streaming
+  - Message Brokers
+  tags:
+  - messaging
+  - amqp
+  - backend
+  packages:
+  - rabbitmq*
+  binaries:
+  - rabbitmqctl
+  - rabbitmq-server
+  services:
+  - rabbitmq-server.service
+  keywords:
+  - rabbitmq
+  - amqp broker
+- id: mosquitto
+  name: Eclipse Mosquitto
+  category:
+  - Messaging & Streaming
+  - MQTT
+  tags:
+  - mqtt
+  - iot
+  - messaging
+  packages:
+  - mosquitto*
+  binaries:
+  - mosquitto
+  - mosquitto_pub
+  - mosquitto_sub
+  services:
+  - mosquitto.service
+  keywords:
+  - mqtt broker
+  - mosquitto
+- id: docker
+  name: Docker
+  category:
+  - Containers
+  tags:
+  - container
+  - devops
+  artifact_names:
+  - docker
+  packages:
+  - docker-ce*
+  - docker.io
+  binaries:
+  - docker
+  services:
+  - docker.service
+  version_commands:
+  - - docker
+    - --version
+- id: docker-compose
+  name: Docker Compose
+  category:
+  - Containers
+  tags:
+  - container
+  - devops
+  artifact_names:
+  - docker-compose
+  packages:
+  - docker-compose*
+  version_commands:
+  - - docker
+    - compose
+    - version
+- id: podman
+  name: Podman
+  category:
+  - Containers
+  tags:
+  - container
+  - devops
+  packages:
+  - podman
+  binaries:
+  - podman
+  version_commands:
+  - - podman
+    - --version
+- id: kubectl
+  name: kubectl
+  category:
+  - Kubernetes
+  tags:
+  - kubernetes
+  - devops
+  packages:
+  - kubectl
+  binaries:
+  - kubectl
+  version_commands:
+  - - kubectl
+    - version
+    - --client
+- id: helm
+  name: Helm
+  category:
+  - Kubernetes
+  tags:
+  - kubernetes
+  - devops
+  packages:
+  - helm
+  binaries:
+  - helm
+  version_commands:
+  - - helm
+    - version
+    - --short
+- id: minikube
+  name: Minikube
+  category:
+  - Kubernetes
+  tags:
+  - kubernetes
+  - devops
+  binaries:
+  - minikube
+  version_commands:
+  - - minikube
+    - version
+- id: kind
+  name: kind
+  category:
+  - Kubernetes
+  tags:
+  - kubernetes
+  - devops
+  binaries:
+  - kind
+  version_commands:
+  - - kind
+    - version
+- id: terraform
+  name: Terraform
+  category:
+  - Cloud & DevOps
+  - Infrastructure as Code
+  tags:
+  - terraform
+  - iac
+  - devops
+  binaries:
+  - terraform
+  packages:
+  - terraform
+  version_commands:
+  - - terraform
+    - version
+- id: ansible
+  name: Ansible
+  category:
+  - Cloud & DevOps
+  - Configuration Management
+  tags:
+  - ansible
+  - automation
+  - devops
+  packages:
+  - ansible*
+  binaries:
+  - ansible
+  version_commands:
+  - - ansible
+    - --version
+- id: aws-cli
+  name: AWS CLI
+  category:
+  - Cloud & DevOps
+  - Cloud CLIs
+  tags:
+  - aws
+  - cloud
+  binaries:
+  - aws
+  version_commands:
+  - - aws
+    - --version
+- id: gcloud
+  name: Google Cloud CLI
+  category:
+  - Cloud & DevOps
+  - Cloud CLIs
+  tags:
+  - gcp
+  - cloud
+  binaries:
+  - gcloud
+  version_commands:
+  - - gcloud
+    - version
+- id: azure-cli
+  name: Azure CLI
+  category:
+  - Cloud & DevOps
+  - Cloud CLIs
+  tags:
+  - azure
+  - cloud
+  packages:
+  - azure-cli
+  binaries:
+  - az
+  version_commands:
+  - - az
+    - version
+- id: prometheus
+  name: Prometheus
+  category:
+  - Observability
+  - Metrics
+  tags:
+  - observability
+  - metrics
+  packages:
+  - prometheus*
+  binaries:
+  - prometheus
+  services:
+  - prometheus.service
+- id: grafana
+  name: Grafana
+  category:
+  - Observability
+  - Visualization
+  tags:
+  - observability
+  - dashboards
+  packages:
+  - grafana*
+  binaries:
+  - grafana
+  - grafana-server
+  services:
+  - grafana-server.service
+- id: opentelemetry
+  name: OpenTelemetry Collector
+  category:
+  - Observability
+  - Telemetry
+  tags:
+  - observability
+  - tracing
+  - metrics
+  binaries:
+  - otelcol
+  - otelcol-contrib
+  services:
+  - otelcol*.service
+- id: pytorch
+  name: PyTorch
+  category:
+  - AI & ML
+  - Frameworks
+  tags:
+  - ai
+  - ml
+  - deep-learning
+  - python
+  artifact_names:
+  - torch
+  - pytorch
+  keywords:
+  - pytorch
+  - torch
+- id: tensorflow
+  name: TensorFlow
+  category:
+  - AI & ML
+  - Frameworks
+  tags:
+  - ai
+  - ml
+  - deep-learning
+  - python
+  artifact_names:
+  - tensorflow
+  - tensorflow-cpu
+  - tensorflow-gpu
+  keywords:
+  - tensorflow
+- id: opencv
+  name: OpenCV
+  category:
+  - AI & ML
+  - Computer Vision
+  tags:
+  - computer-vision
+  - robotics
+  - image-processing
+  packages:
+  - libopencv*
+  - python3-opencv
+  keywords:
+  - opencv
+  - computer vision
+- id: ollama
+  name: Ollama
+  category:
+  - AI & ML
+  - LLM Runtime
+  tags:
+  - ai
+  - llm
+  - inference
+  binaries:
+  - ollama
+  services:
+  - ollama.service
+  version_commands:
+  - - ollama
+    - --version
+- id: llama-cpp
+  name: llama.cpp
+  category:
+  - AI & ML
+  - LLM Runtime
+  tags:
+  - ai
+  - llm
+  - inference
+  binaries:
+  - llama-cli
+  - llama-server
+  keywords:
+  - llama.cpp
+- id: mlflow
+  name: MLflow
+  category:
+  - AI & ML
+  - MLOps
+  tags:
+  - mlops
+  - ai
+  binaries:
+  - mlflow
+  version_commands:
+  - - mlflow
+    - --version
+- id: cuda
+  name: CUDA Toolkit
+  category:
+  - GPU Compute
+  tags:
+  - cuda
+  - nvidia
+  - gpu
+  packages:
+  - cuda-toolkit*
+  - nvidia-cuda-toolkit
+  binaries:
+  - nvcc
+  version_commands:
+  - - nvcc
+    - --version
+- id: ros2
+  name: ROS 2
+  category:
+  - Robotics
+  - ROS
+  tags:
+  - robotics
+  - ros
+  artifact_names:
+  - jazzy
+  - humble
+  - iron
+  - rolling
+  - kilted
+  binaries:
+  - ros2
+- id: gazebo
+  name: Gazebo
+  category:
+  - Robotics
+  - Simulation
+  tags:
+  - robotics
+  - simulation
+  - physics
+  packages:
+  - gz-*
+  - ros-*-gz-*-vendor
+  - ros-*-ros-gz*
+  binaries:
+  - gz
+  keywords:
+  - gazebo simulation
+  - gz sim
+  version_commands:
+  - - gz
+    - sim
+    - --versions
+- id: rviz
+  name: RViz
+  category:
+  - Robotics
+  - Visualization
+  tags:
+  - robotics
+  - ros
+  - visualization
+  packages:
+  - ros-*-rviz2
+  - ros-*-rviz-*
+  binaries:
+  - rviz2
+- id: ros-gz
+  name: ros_gz
+  category:
+  - Robotics
+  - ROS Integration
+  tags:
+  - robotics
+  - ros
+  - gazebo
+  packages:
+  - ros-*-ros-gz*
+  artifact_names:
+  - ros_gz
+  - ros_gz_bridge
+  - ros_gz_sim
+- id: nav2
+  name: Navigation2
+  category:
+  - Robotics
+  - Navigation
+  tags:
+  - robotics
+  - ros
+  - navigation
+  packages:
+  - ros-*-navigation2
+  - ros-*-nav2-*
+  artifact_names:
+  - nav2_*
+- id: slam-toolbox
+  name: SLAM Toolbox
+  category:
+  - Robotics
+  - SLAM
+  tags:
+  - robotics
+  - ros
+  - slam
+  packages:
+  - ros-*-slam-toolbox
+  artifact_names:
+  - slam_toolbox
+- id: moveit
+  name: MoveIt
+  category:
+  - Robotics
+  - Motion Planning
+  tags:
+  - robotics
+  - ros
+  - motion-planning
+  packages:
+  - ros-*-moveit*
+  artifact_names:
+  - moveit*
+- id: ros2-control
+  name: ros2_control
+  category:
+  - Robotics
+  - Control
+  tags:
+  - robotics
+  - ros
+  - control
+  packages:
+  - ros-*-ros2-control*
+  - ros-*-ros2-controllers*
+  artifact_names:
+  - controller_manager
+  - hardware_interface
+- id: webots
+  name: Webots
+  category:
+  - Robotics
+  - Simulation
+  tags:
+  - robotics
+  - simulation
+  packages:
+  - webots*
+  snaps:
+  - webots
+  binaries:
+  - webots
+- id: isaac-sim
+  name: NVIDIA Isaac Sim
+  category:
+  - Robotics
+  - Simulation
+  tags:
+  - robotics
+  - simulation
+  - nvidia
+  keywords:
+  - isaac sim
