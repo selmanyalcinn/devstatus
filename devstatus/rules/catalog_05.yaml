@@ -1,0 +1,257 @@
+products:
+- id: bun
+  name: Bun
+  category:
+  - Languages & Toolchains
+  - JavaScript & TypeScript
+  tags:
+  - javascript
+  - runtime
+  - package-manager
+  binaries:
+  - bun
+  version_commands:
+  - - bun
+    - --version
+- id: deno
+  name: Deno
+  category:
+  - Languages & Toolchains
+  - JavaScript & TypeScript
+  tags:
+  - javascript
+  - typescript
+  - runtime
+  binaries:
+  - deno
+  version_commands:
+  - - deno
+    - --version
+- id: poetry
+  name: Poetry
+  category:
+  - Languages & Toolchains
+  - Python
+  tags:
+  - python
+  - package-manager
+  binaries:
+  - poetry
+  python_packages:
+  - poetry
+  version_commands:
+  - - poetry
+    - --version
+- id: pdm
+  name: PDM
+  category:
+  - Languages & Toolchains
+  - Python
+  tags:
+  - python
+  - package-manager
+  binaries:
+  - pdm
+  python_packages:
+  - pdm
+  version_commands:
+  - - pdm
+    - --version
+- id: hatch
+  name: Hatch
+  category:
+  - Languages & Toolchains
+  - Python
+  tags:
+  - python
+  - package-manager
+  binaries:
+  - hatch
+  python_packages:
+  - hatch
+  version_commands:
+  - - hatch
+    - --version
+- id: rye
+  name: Rye
+  category:
+  - Languages & Toolchains
+  - Python
+  tags:
+  - python
+  - package-manager
+  binaries:
+  - rye
+  version_commands:
+  - - rye
+    - --version
+- id: pyenv
+  name: pyenv
+  category:
+  - Languages & Toolchains
+  - Python
+  tags:
+  - python
+  - version-manager
+  binaries:
+  - pyenv
+  version_commands:
+  - - pyenv
+    - --version
+- id: sdkman
+  name: SDKMAN!
+  category:
+  - Languages & Toolchains
+  - JVM
+  tags:
+  - java
+  - version-manager
+  paths:
+  - '*/.sdkman*'
+  binaries:
+  - sdk
+- id: kotlin
+  name: Kotlin
+  category:
+  - Languages & Toolchains
+  - JVM
+  tags:
+  - kotlin
+  - jvm
+  binaries:
+  - kotlin
+  - kotlinc
+  version_commands:
+  - - kotlinc
+    - -version
+- id: scala
+  name: Scala
+  category:
+  - Languages & Toolchains
+  - JVM
+  tags:
+  - scala
+  - jvm
+  binaries:
+  - scala
+  version_commands:
+  - - scala
+    - -version
+- id: zig
+  name: Zig
+  category:
+  - Languages & Toolchains
+  - Zig
+  tags:
+  - zig
+  - compiler
+  binaries:
+  - zig
+  version_commands:
+  - - zig
+    - version
+- id: lua
+  name: Lua
+  category:
+  - Languages & Toolchains
+  - Lua
+  tags:
+  - lua
+  - runtime
+  binaries:
+  - lua
+  version_commands:
+  - - lua
+    - -v
+- id: r-lang
+  name: R
+  category:
+  - Languages & Toolchains
+  - R
+  tags:
+  - r
+  - data-science
+  binaries:
+  - R
+  version_commands:
+  - - R
+    - --version
+- id: nix
+  name: Nix
+  category:
+  - Package & Environment Management
+  tags:
+  - package-manager
+  - environment
+  binaries:
+  - nix
+  version_commands:
+  - - nix
+    - --version
+- id: homebrew
+  name: Homebrew
+  category:
+  - Package & Environment Management
+  tags:
+  - package-manager
+  binaries:
+  - brew
+  version_commands:
+  - - brew
+    - --version
+- id: starlette
+  name: Starlette
+  category:
+  - Backend
+  - Web Frameworks
+  tags:
+  - backend
+  - python
+  - asgi
+  python_packages:
+  - starlette
+- id: litestar
+  name: Litestar
+  category:
+  - Backend
+  - Web Frameworks
+  tags:
+  - backend
+  - python
+  - api
+  python_packages:
+  - litestar
+- id: aiohttp
+  name: aiohttp
+  category:
+  - Backend
+  - Web Frameworks
+  tags:
+  - backend
+  - python
+  - async
+  python_packages:
+  - aiohttp
+- id: tornado
+  name: Tornado
+  category:
+  - Backend
+  - Web Frameworks
+  tags:
+  - backend
+  - python
+  python_packages:
+  - tornado
+- id: rails
+  name: Ruby on Rails
+  category:
+  - Backend
+  - Web Frameworks
+  tags:
+  - backend
+  - ruby
+  binaries:
+  - rails
+  version_commands:
+  - - rails
+    - --version
