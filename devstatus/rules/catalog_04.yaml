@@ -1,0 +1,535 @@
+products:
+- id: svelte
+  name: Svelte
+  category:
+  - Frontend
+  - Frameworks & Libraries
+  tags:
+  - frontend
+  - javascript
+  - svelte
+  artifact_names:
+  - svelte
+  - '@sveltejs/kit'
+- id: vite
+  name: Vite
+  category:
+  - Frontend
+  - Build Tooling
+  tags:
+  - frontend
+  - javascript
+  - build
+  artifact_names:
+  - vite
+  binaries:
+  - vite
+- id: webpack
+  name: webpack
+  category:
+  - Frontend
+  - Build Tooling
+  tags:
+  - frontend
+  - javascript
+  - build
+  artifact_names:
+  - webpack
+  - webpack-cli
+  binaries:
+  - webpack
+- id: expo
+  name: Expo
+  category:
+  - Mobile Development
+  - React Native
+  tags:
+  - mobile
+  - react-native
+  - javascript
+  artifact_names:
+  - expo
+  - '@expo/cli'
+  binaries:
+  - expo
+- id: react-native
+  name: React Native
+  category:
+  - Mobile Development
+  - React Native
+  tags:
+  - mobile
+  - react-native
+  - javascript
+  artifact_names:
+  - react-native
+  - '@react-native-community/cli'
+- id: numpy
+  name: NumPy
+  category:
+  - AI & ML
+  - Scientific Python
+  tags:
+  - python
+  - data-science
+  - numerical
+  artifact_names:
+  - numpy
+- id: pandas
+  name: pandas
+  category:
+  - AI & ML
+  - Data Science
+  tags:
+  - python
+  - data-science
+  artifact_names:
+  - pandas
+- id: scipy
+  name: SciPy
+  category:
+  - AI & ML
+  - Scientific Python
+  tags:
+  - python
+  - data-science
+  - numerical
+  artifact_names:
+  - scipy
+- id: scikit-learn
+  name: scikit-learn
+  category:
+  - AI & ML
+  - Classical ML
+  tags:
+  - python
+  - ml
+  - data-science
+  artifact_names:
+  - scikit-learn
+- id: jax
+  name: JAX
+  category:
+  - AI & ML
+  - Frameworks
+  tags:
+  - python
+  - ai
+  - ml
+  - accelerator
+  artifact_names:
+  - jax
+  - jaxlib
+- id: transformers
+  name: Hugging Face Transformers
+  category:
+  - AI & ML
+  - LLM & Model Tooling
+  tags:
+  - python
+  - ai
+  - llm
+  - transformers
+  artifact_names:
+  - transformers
+- id: huggingface-hub
+  name: Hugging Face Hub
+  category:
+  - AI & ML
+  - LLM & Model Tooling
+  tags:
+  - python
+  - ai
+  - models
+  artifact_names:
+  - huggingface-hub
+- id: vllm
+  name: vLLM
+  category:
+  - AI & ML
+  - LLM Runtime
+  tags:
+  - python
+  - ai
+  - llm
+  - inference
+  artifact_names:
+  - vllm
+  binaries:
+  - vllm
+- id: onnx
+  name: ONNX
+  category:
+  - AI & ML
+  - Model Interchange
+  tags:
+  - ai
+  - inference
+  - models
+  artifact_names:
+  - onnx
+  - onnxruntime
+  - onnxruntime-gpu
+- id: tensorrt
+  name: TensorRT
+  category:
+  - GPU Compute
+  - Inference
+  tags:
+  - nvidia
+  - gpu
+  - ai
+  - inference
+  artifact_names:
+  - tensorrt
+  packages:
+  - libnvinfer*
+  - tensorrt*
+  binaries:
+  - trtexec
+- id: jupyter
+  name: Jupyter
+  category:
+  - AI & ML
+  - Notebooks
+  tags:
+  - python
+  - notebook
+  - data-science
+  artifact_names:
+  - jupyter
+  - jupyterlab
+  - notebook
+  binaries:
+  - jupyter
+- id: wandb
+  name: Weights & Biases
+  category:
+  - AI & ML
+  - MLOps
+  tags:
+  - mlops
+  - ai
+  - experiment-tracking
+  artifact_names:
+  - wandb
+  binaries:
+  - wandb
+- id: dvc
+  name: DVC
+  category:
+  - AI & ML
+  - MLOps
+  tags:
+  - mlops
+  - data-versioning
+  artifact_names:
+  - dvc
+  binaries:
+  - dvc
+- id: airflow
+  name: Apache Airflow
+  category:
+  - Data Engineering
+  - Orchestration
+  tags:
+  - data-engineering
+  - orchestration
+  artifact_names:
+  - apache-airflow
+  binaries:
+  - airflow
+- id: dbt
+  name: dbt
+  category:
+  - Data Engineering
+  - Transformation
+  tags:
+  - data-engineering
+  - analytics
+  artifact_names:
+  - dbt-core
+  binaries:
+  - dbt
+- id: spark
+  name: Apache Spark
+  category:
+  - Data Engineering
+  - Distributed Compute
+  tags:
+  - data-engineering
+  - distributed
+  artifact_names:
+  - pyspark
+  binaries:
+  - spark-submit
+  - pyspark
+  keywords:
+  - apache spark
+- id: tmux
+  name: tmux
+  category:
+  - Developer Utilities
+  - Terminal
+  tags:
+  - terminal
+  - cli
+  packages:
+  - tmux
+  binaries:
+  - tmux
+  version_commands:
+  - - tmux
+    - -V
+- id: strace
+  name: strace
+  category:
+  - Systems & OS Development
+  - Debugging
+  tags:
+  - systems
+  - debugging
+  - linux
+  packages:
+  - strace
+  binaries:
+  - strace
+  version_commands:
+  - - strace
+    - --version
+- id: valgrind
+  name: Valgrind
+  category:
+  - Systems & OS Development
+  - Debugging
+  tags:
+  - systems
+  - debugging
+  - memory
+  packages:
+  - valgrind
+  binaries:
+  - valgrind
+  version_commands:
+  - - valgrind
+    - --version
+- id: openssh
+  name: OpenSSH
+  category:
+  - Networking
+  - Remote Access
+  tags:
+  - networking
+  - ssh
+  - security
+  packages:
+  - openssh-client
+  - openssh-server
+  binaries:
+  - ssh
+  services:
+  - ssh.service
+  - sshd.service
+  version_commands:
+  - - ssh
+    - -V
+- id: wireguard
+  name: WireGuard
+  category:
+  - Networking
+  - VPN
+  tags:
+  - networking
+  - vpn
+  - security
+  packages:
+  - wireguard
+  - wireguard-tools
+  binaries:
+  - wg
+  version_commands:
+  - - wg
+    - --version
+- id: pytest-cov
+  name: Coverage.py / pytest-cov
+  category:
+  - Testing & QA
+  - Coverage
+  tags:
+  - python
+  - testing
+  - coverage
+  artifact_names:
+  - coverage
+  - pytest-cov
+- id: jest
+  name: Jest
+  category:
+  - Testing & QA
+  - Unit Testing
+  tags:
+  - javascript
+  - testing
+  artifact_names:
+  - jest
+- id: vitest
+  name: Vitest
+  category:
+  - Testing & QA
+  - Unit Testing
+  tags:
+  - javascript
+  - testing
+  artifact_names:
+  - vitest
+- id: cypress
+  name: Cypress
+  category:
+  - Testing & QA
+  - End-to-End
+  tags:
+  - javascript
+  - testing
+  - browser
+  artifact_names:
+  - cypress
+  binaries:
+  - cypress
+- id: godot
+  name: Godot
+  category:
+  - Graphics & Game Development
+  - Engines
+  tags:
+  - game-development
+  - graphics
+  packages:
+  - godot*
+  binaries:
+  - godot
+  - godot4
+- id: vulkan
+  name: Vulkan Tools
+  category:
+  - Graphics & Game Development
+  - Graphics APIs
+  tags:
+  - graphics
+  - vulkan
+  packages:
+  - vulkan-tools
+  - libvulkan*
+  binaries:
+  - vulkaninfo
+- id: sdl
+  name: SDL
+  category:
+  - Graphics & Game Development
+  - Libraries
+  tags:
+  - graphics
+  - game-development
+  packages:
+  - libsdl2*
+  - libsdl3*
+- id: zephyr
+  name: Zephyr
+  category:
+  - Embedded & IoT
+  - RTOS
+  tags:
+  - embedded
+  - rtos
+  - firmware
+  binaries:
+  - west
+  keywords:
+  - zephyr project
+  - zephyr rtos
+- id: arm-none-eabi
+  name: Arm GNU Toolchain
+  category:
+  - Embedded & IoT
+  - Toolchains
+  tags:
+  - embedded
+  - arm
+  - compiler
+  packages:
+  - gcc-arm-none-eabi*
+  binaries:
+  - arm-none-eabi-gcc
+  version_commands:
+  - - arm-none-eabi-gcc
+    - --version
+- id: stlink
+  name: ST-Link Tools
+  category:
+  - Embedded & IoT
+  - Debugging
+  tags:
+  - embedded
+  - stm32
+  - debugging
+  packages:
+  - stlink-tools
+  - stlink*
+  binaries:
+  - st-info
+- id: socat
+  name: socat
+  category:
+  - Networking
+  - Network Utilities
+  tags:
+  - networking
+  - cli
+  packages:
+  - socat
+  binaries:
+  - socat
+  version_commands:
+  - - socat
+    - -V
+- id: netcat
+  name: Netcat
+  category:
+  - Networking
+  - Network Utilities
+  tags:
+  - networking
+  - cli
+  packages:
+  - netcat-*
+  - ncat
+  binaries:
+  - nc
+  - ncat
+- id: act
+  name: act
+  category:
+  - Cloud & DevOps
+  - CI/CD
+  tags:
+  - github-actions
+  - ci
+  - devops
+  binaries:
+  - act
+  version_commands:
+  - - act
+    - --version
+- id: pulumi
+  name: Pulumi
+  category:
+  - Cloud & DevOps
+  - Infrastructure as Code
+  tags:
+  - iac
+  - devops
+  - cloud
+  binaries:
+  - pulumi
+  version_commands:
+  - - pulumi
+    - version
